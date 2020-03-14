@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-firestore.js"></script>
+        <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+        <script type="text/javascript" src="firestore.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+        <link
+            type="text/css"
+            rel="stylesheet"
+            href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css"
+        />
+    </head>
+    <body>
+        <div id="firebaseui-auth-container"></div>
+        <div id="loader">Loading...</div>
+        Long URL: <input type="url" id="url_input" /><br />
+        Alias: <input type="text" id="alias" />
+        <button onclick="shortenUrl()">Shorten The URL</button>
+        <p id="done"></p>
+    </body>
+</html>
